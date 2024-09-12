@@ -8,7 +8,7 @@ namespace Denombrements
         /// Main program execution
         /// </summary>
         /// <param name="args"></param>
-        static void Main(string[] args)
+        static void Main()
         {
             int choix = 1;
             while (choix != 0)
@@ -88,6 +88,13 @@ namespace Denombrements
             Console.ReadLine();
         }
 
+        /// <summary>
+        /// Permet de multiplier par une suite de nombre entre start et nombre
+        /// </summary>
+        /// <param name="start">Début de la suite</param>
+        /// <param name="nombre">Fin de la suite</param>
+        /// <param name="multiplieur">Nombre à multiplier</param>
+        /// <returns></returns>
         static long Multiplication(int start, int nombre, long multiplieur)
         {
             for(int k = start; k <= nombre; k++)
